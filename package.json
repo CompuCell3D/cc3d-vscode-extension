@@ -1,0 +1,28 @@
+{
+    "name": "CompuCell3D",
+    "displayName": "cc3d-vscode",
+    "description": "Provides code snippets for creating CompuCell3D models",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/python-snippets.code-snippets"
+            },
+            {
+                "language": "cpp",
+                "path": "./snippets/cpp-snippets.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml-snippets.code-snippets"
+            }
+        ]
+    }
+}
