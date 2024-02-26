@@ -12,8 +12,18 @@
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
-			"prepreLaunchTask": "npm run compile",
-            "preLaunchTask": "${defaultBuildTask}"
+			"preLaunchTask": "npm: compile"
+        }
+    ],
+    "tasks": [
+        {
+            "label": "npm: compile",
+            "type": "npm",
+            "script": "compile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

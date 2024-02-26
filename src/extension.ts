@@ -10,7 +10,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	new SnippetView(context);
 	vscode.commands.registerCommand('snippetView.insertCode', (node) => {
-		vscode.window.showInformationMessage(`Successfully called edit entry on ${node}.`);
+		vscode.window.showInformationMessage(`Successfully called entry on ${node}.`);
 		console.log(`Successfully called edit entry on`,node)
 	});
+	vscode.commands.registerCommand("snippetView.selectNode", (label: string) => {
+		vscode.window.showInformationMessage(`Clicked entry on ${label}.`);
+        console.log('clicked', label);
+    });
 }

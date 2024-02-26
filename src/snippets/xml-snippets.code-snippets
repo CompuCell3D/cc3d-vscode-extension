@@ -295,8 +295,8 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/pixel_tracking_plugins.html#pixeltracker-plugin"
     },
-    "PixelTracker": {
-        "prefix": "GlobalBoundaryPixelTracker ",
+    "GlobalBoundaryPixelTracker": {
+        "prefix": "Global PixelTracker ",
         "body": [
             "<Plugin Name=\"PixelTracker\">",
             "   <NeighborOrder>2</NeighborOrder>",
