@@ -1,5 +1,7 @@
 import * as vscode from 'vscode';
 import * as xmlTree from "./snippets/xml-tree.json";
+import * as cppTree from "./snippets/cpp-tree.json";
+import * as pythonTree from "./snippets/python-tree.json";
 
 export class SnippetView {
     constructor(context: vscode.ExtensionContext) {
@@ -30,6 +32,19 @@ class TreeItem extends vscode.TreeItem {
     }
 }
 
+function createTreeFromJson(jsonData: any, rootLabel: string) {
+	var mainChildren: TreeItem[] = [];
+	for (const [key, value] of Object.entries(xmlTree)) {
+		var children: TreeItem[] = [];
+		for (var name of Object.keys(value)) {
+			children.push(new TreeItem(name));
+		}
+
+		mainChildren.push(new TreeItem(key, children));
+	}; 
+	return new TreeItem(rootLabel, mainChildren);
+}
+
 class TreeDataProvider implements vscode.TreeDataProvider<TreeItem> {
     onDidChangeTreeData?: vscode.Event<TreeItem|null|undefined>|undefined;
   
@@ -37,15 +52,12 @@ class TreeDataProvider implements vscode.TreeDataProvider<TreeItem> {
   
     constructor() {
         this.treeData = [];
-        for (const [key, value] of Object.entries(xmlTree)) {
-            var children: TreeItem[] = [];
-            for (var name of Object.keys(value)) {
-                children.push(new TreeItem(name));
-            }
-
-            this.treeData.push(new TreeItem(key, children));
-        };
-        this.treeData = [new TreeItem('XML Plugins', this.treeData)]; //set root
+        
+        this.treeData = [new TreeItem('Code Snippets', [
+			createTreeFromJson(cppTree, 'CC3D C++'),
+			createTreeFromJson(xmlTree, 'CC3DML'),
+			createTreeFromJson(pythonTree, 'CC3D Python'),
+		])];
 
     }
   

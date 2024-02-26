@@ -4,17 +4,25 @@ import * as vscode from 'vscode';
 
 import { SnippetView } from './snippetView';
 
-export function activate(context: vscode.ExtensionContext) {
-	// const rootPath = (vscode.workspace.workspaceFolders && (vscode.workspace.workspaceFolders.length > 0))
-	// 	? vscode.workspace.workspaceFolders[0].uri.fsPath : undefined;
+function pasteSnippet(snippetText: string) {
+    try {
+        const editor = vscode.window.activeTextEditor;
+        editor?.edit(TextEditorEdit => {
+            TextEditorEdit.insert(editor.selection.active, snippetText);
+        });
+    }
+    catch {
+        vscode.window.showInformationMessage(`Error: Couldn't paste that snippet.`);
+    }
+}
 
-	new SnippetView(context);
-	vscode.commands.registerCommand('snippetView.insertCode', (node) => {
-		vscode.window.showInformationMessage(`Successfully called entry on ${node}.`);
-		console.log(`Successfully called edit entry on`,node)
-	});
-	vscode.commands.registerCommand("snippetView.selectNode", (label: string) => {
-		vscode.window.showInformationMessage(`Clicked entry on ${label}.`);
-        console.log('clicked', label);
+export function activate(context: vscode.ExtensionContext) {
+
+    new SnippetView(context);
+    vscode.commands.registerCommand('snippetView.insertCode', (node) => {
+        pasteSnippet(node?.label);
+    });
+    vscode.commands.registerCommand("snippetView.selectNode", (label: string) => {
+        pasteSnippet(label);
     });
 }
