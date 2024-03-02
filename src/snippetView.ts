@@ -4,9 +4,29 @@ import * as cppTree from "./snippets/cpp-tree.json";
 import * as pythonTree from "./snippets/python-tree.json";
 
 export class SnippetView {
+    treeDataProvider: TreeDataProvider;
+
     constructor(context: vscode.ExtensionContext) {
-        const view = vscode.window.createTreeView('snippetView', { treeDataProvider: new TreeDataProvider(), showCollapseAll: true });
+        this.treeDataProvider = new TreeDataProvider();
+        const view = vscode.window.createTreeView('snippetView', { treeDataProvider: this.treeDataProvider, showCollapseAll: true });
         context.subscriptions.push(view);
+
+        // Handle the file type change as the user navigates between files
+        vscode.window.onDidChangeActiveTextEditor((editor) => {
+          if (editor) {
+              const languageId = editor.document?.languageId;
+
+              if (languageId === "python") {
+                this.treeDataProvider.enablePython();
+              }
+              else if (languageId === "cpp") {
+                this.treeDataProvider.enableCpp();
+              }
+              else if (languageId === "xml") {
+                this.treeDataProvider.enableXml();
+              }
+          }
+      });
     }
 }
 
@@ -34,9 +54,10 @@ class TreeItem extends vscode.TreeItem {
 
 function createTreeFromJson(jsonData: any, rootLabel: string) {
 	var mainChildren: TreeItem[] = [];
-	for (const [key, value] of Object.entries(xmlTree)) {
+	for (const [key, value] of Object.entries(jsonData)) {
+    var valueAny: any = value; //prevents TypeScript compiler error
 		var children: TreeItem[] = [];
-		for (var name of Object.keys(value)) {
+		for (var name of Object.keys(valueAny)) {
 			children.push(new TreeItem(name));
 		}
 
@@ -46,19 +67,39 @@ function createTreeFromJson(jsonData: any, rootLabel: string) {
 }
 
 class TreeDataProvider implements vscode.TreeDataProvider<TreeItem> {
-    onDidChangeTreeData?: vscode.Event<TreeItem|null|undefined>|undefined;
-  
+    private changeEvent = new vscode.EventEmitter<void>();
+    public get onDidChangeTreeData(): vscode.Event<void> {
+      return this.changeEvent.event;
+    }
+    public refresh(): void {
+      this.changeEvent.fire();
+    }
+    
+    public enableCpp() {
+      this.treeData = [createTreeFromJson(cppTree, 'CC3D C++')];
+      this.refresh();
+    }
+    
+    public enablePython() {
+      this.treeData = [createTreeFromJson(pythonTree, 'CC3D Python')];
+      this.refresh();
+    }
+    
+    public enableXml() {
+      this.treeData = [createTreeFromJson(xmlTree, 'CC3DML')];
+      this.refresh();
+    }
+
     treeData: TreeItem[];
   
     constructor() {
         this.treeData = [];
         
-        this.treeData = [new TreeItem('Code Snippets', [
-			createTreeFromJson(cppTree, 'CC3D C++'),
-			createTreeFromJson(xmlTree, 'CC3DML'),
-			createTreeFromJson(pythonTree, 'CC3D Python'),
-		])];
-
+        // this.treeData = [new TreeItem('Code Snippets', [
+        //   createTreeFromJson(cppTree, 'CC3D C++'),
+        //   createTreeFromJson(xmlTree, 'CC3DML'),
+        //   createTreeFromJson(pythonTree, 'CC3D Python'),
+        // ])];
     }
   
     getTreeItem(element: TreeItem): vscode.TreeItem | Thenable<vscode.TreeItem> {
