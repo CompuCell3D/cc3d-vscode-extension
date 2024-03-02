@@ -1,27 +1,27 @@
 {
-	"name": "compucell3d-code-snippets",
-	"displayName": "CompuCell3D Code Snippets",
-	"description": "Provides code snippets for programming C++, Python, and XML in CompuCell3D.",
-	"version": "0.0.1",
-	"publisher": "vscode-samples",
-	"private": true,
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/CompuCell3D/cc3d-vscode-extension"
-	},
-	"engines": {
-		"vscode": "^1.74.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onLanguage:json",
-		"onLanguage:jsonc"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
+    "name": "compucell3d-code-snippets",
+    "displayName": "CompuCell3D Code Snippets",
+    "description": "Provides code snippets for programming C++, Python, and XML in CompuCell3D.",
+    "version": "0.0.1",
+    "publisher": "vscode-samples",
+    "private": true,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CompuCell3D/cc3d-vscode-extension"
+    },
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:json",
+        "onLanguage:jsonc"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
         "snippets": [
             {
                 "language": "python",
@@ -36,73 +36,82 @@
                 "path": "./src/snippets/xml-snippets.code-snippets"
             }
         ],
-		"viewsContainers": {
-			"activitybar": [
-				{
-					"id": "package-explorer",
-					"title": "Package Explorer",
-					"icon": "media/dep.svg"
-				}
-			]
-		},
-		"views": {
-			"package-explorer": [
-				{
-					"id": "nodeDependencies",
-					"name": "Node Dependencies",
-					"icon": "media/dep.svg",
-					"contextualTitle": "Package Explorer"
-				}
-			],
-			"explorer": [
-				{
-					"id": "snippetView",
-					"name": "CC3D Snippets"
-				}
-			]
-		},
-		"commands": [
-			{
-				"command": "snippetView.insertCode",
-				"title": "CC3D: Insert Snippet",
-				"icon": {
-					"light": "resources/right-arrow.svg",
-					"dark": "resources/right-arrow.svg"
-				}
-			}
-		],
-		"menus": {
-			"commandPalette": [],
-			"view/title": [],
-			"view/item/context": [
-				{
-					"command": "snippetView.insertCode",
-					"when": "view == snippetView && viewItem == snippetItem",
-					"group": "inline"
-				}
-			]
-		},
-		"configuration": []
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc --resolveJsonModule -p ./",
-		"watch": "tsc -watch -p ./",
-		"lint": "eslint \"src/**/*.ts\""
-	},
-	"devDependencies": {
-		"@types/node": "^16.18.34",
-		"@types/vscode": "^1.73.0",
-		"@typescript-eslint/eslint-plugin": "^6.7.0",
-		"@typescript-eslint/parser": "^6.7.0",
-		"eslint": "^8.26.0",
-		"typescript": "^5.3.2"
-	},
-	"dependencies": {
-		"ftp": "^0.3.10",
-		"jsonc-parser": "^0.4.2",
-		"minimist": "^1.2.6",
-		"mkdirp": "^0.5.1",
-		"rimraf": "^2.6.2"
-	}
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "package-explorer",
+                    "title": "Package Explorer",
+                    "icon": "media/dep.svg"
+                }
+            ]
+        },
+        "views": {
+            "package-explorer": [
+                {
+                    "id": "nodeDependencies",
+                    "name": "Node Dependencies",
+                    "icon": "media/dep.svg",
+                    "contextualTitle": "Package Explorer"
+                }
+            ],
+            "explorer": [
+                {
+                    "id": "snippetView",
+                    "name": "CC3D Snippets"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "snippetView.insertCode",
+                "title": "CC3D: Insert Snippet",
+                "icon": {
+                    "light": "resources/right-arrow.svg",
+                    "dark": "resources/right-arrow.svg"
+                }
+            }
+        ],
+        "menus": {
+            "commandPalette": [],
+            "view/title": [],
+            "view/item/context": [
+                {
+                    "command": "snippetView.insertCode",
+                    "when": "view == snippetView && viewItem == snippetItem",
+                    "group": "inline"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "CC3D Snippets (CompuCell3D)",
+            "properties": {
+                "cc3d.showOnlyRelevantSnippetsInMenu": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "When set to true: As you edit Python/XML/C++ files, this setting will show only snippets in the tree menu that correspond to the programming language you're using. When set to false: All snippets will be shown in the menu regardless of the language. (Restart required)"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc --resolveJsonModule -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint \"src/**/*.ts\""
+    },
+    "devDependencies": {
+        "@types/node": "^16.18.34",
+        "@types/vscode": "^1.73.0",
+        "@typescript-eslint/eslint-plugin": "^6.7.0",
+        "@typescript-eslint/parser": "^6.7.0",
+        "eslint": "^8.26.0",
+        "typescript": "^5.3.2"
+    },
+    "dependencies": {
+        "ftp": "^0.3.10",
+        "jsonc-parser": "^0.4.2",
+        "minimist": "^1.2.6",
+        "mkdirp": "^0.5.1",
+        "rimraf": "^2.6.2"
+    }
 }
