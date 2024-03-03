@@ -1,65 +1,27 @@
-# CompuCell3D README
+# CompuCell3D Snippets
 
-This is the README for your extension "CompuCell3D". After writing up a brief description, we recommend including the following sections.
+This official plugin for CompuCell3D includes more than 300 code snippets to help you write simulations in Python and XML as well as develop C++ plugins.
+
+CompuCell3D publishes open-source virtual tissue modeling software that enables scientists to fill gaps in experimental data, educate communities, and accelerate discoveries by simulating biological phenomena.
+https://compucell3d.org/
+
+You can use our specialized editor, Twedit++, or this VSCode plugin to develop simulations. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+As you type in a `.py`, `.xml`, or `.cpp` file with this extension enabled, VSCode will suggest code snippets to auto-complete with. 
 
-For example, if there is an image subfolder under your extension project workspace:
+You can also find all of the snippets in the CC3D Snippets menu. Double-click a snippet or click the blue arrow to the right of it to insert it. 
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+![feature X](images/CC3D-VSCode-Demo.gif)
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+`Show Only Relevant Snippets In Menu`: 
+  * When set to `true` (*default*): As you edit Python/XML/C++ files, this setting will show only snippets in the tree menu that correspond to the programming language you're using. 
+  * When set to `false`: All snippets will be shown in the menu regardless of the language. This will also prevent you from losing your place as you browse. 
 
-For example:
+## Getting Help
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you have any challenges, suggestions, or feedback for this extemsion, we'd be happy to help on Reddit: 
+https://www.reddit.com/r/CompuCell3D 
