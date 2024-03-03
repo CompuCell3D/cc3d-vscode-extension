@@ -23,5 +23,5 @@ You can also find all of the snippets in the CC3D Snippets menu. Double-click a 
 
 ## Getting Help
 
-If you have any challenges, suggestions, or feedback for this extemsion, we'd be happy to help on Reddit: 
+If you have any challenges, suggestions, or feedback for this extension, we'd be happy to help on Reddit: 
 https://www.reddit.com/r/CompuCell3D 
