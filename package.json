@@ -3,7 +3,7 @@
     "displayName": "CompuCell3D Code Snippets",
     "description": "Provides code snippets for programming C++, Python, and XML in CompuCell3D.",
     "version": "0.0.1",
-    "publisher": "vscode-samples",
+    "publisher": "CompuCell3D",
     "private": true,
     "license": "MIT",
     "repository": {
