@@ -1,5 +1,5 @@
 {
-    "Metadata": {
+    "CC3D: Metadata": {
         "prefix": "Metadata",
         "body": [
             "<Metadata>",
@@ -11,7 +11,7 @@
         ],
         "description": ""
     },
-    "Potts: Simple": {
+    "CC3D: Potts: Simple": {
         "prefix": "Potts: Simple",
         "body": [
             "<Potts>  ",
@@ -24,7 +24,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/potts.html"
     },
-    "Potts: Complex": {
+    "CC3D: Potts: Complex": {
         "prefix": "Potts: Complex",
         "body": [
             "<Potts>",
@@ -43,7 +43,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/potts.html"
     },
-    "CellType": {
+    "CC3D: CellType": {
         "prefix": "CellType",
         "body": [
             "<Plugin Name=\"CellType\">",
@@ -54,7 +54,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/cell_type_plugin.html#celltype-plugin"
     },
-    "CenterOfMass": {
+    "CC3D: CenterOfMass": {
         "prefix": "CenterOfMass",
         "body": [
             "<Plugin Name=\"CenterOfMass\">",
@@ -63,7 +63,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/center_of_mass_plugin.html"
     },
-    "NeighborTracker": {
+    "CC3D: NeighborTracker": {
         "prefix": "NeighborTracker",
         "body": [
             "<Plugin Name=\"NeighborTracker\">",
@@ -72,7 +72,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/neighbor_tracker.html"
     },
-    "AdhesionFlex": {
+    "CC3D: AdhesionFlex": {
         "prefix": "AdhesionFlex",
         "body": [
             "<Plugin Name=\"AdhesionFlex\">",
@@ -94,7 +94,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/adhesion_flex_plugin.html"
     },
-    "BoundaryPixelTracker": {
+    "CC3D: BoundaryPixelTracker": {
         "prefix": "BoundaryPixelTracker",
         "body": [
             "<Plugin Name=\"BoundaryPixelTracker\">",
@@ -104,7 +104,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/pixel_tracking_plugins.html"
     },
-    "CellTypeMonitor": {
+    "CC3D: CellTypeMonitor": {
         "prefix": "CellTypeMonitor",
         "body": [
             "<Plugin Name=\"CellTypeMonitor\">",
@@ -113,7 +113,7 @@
         ],
         "description": ""
     },
-    "Chemotaxis": {
+    "CC3D: Chemotaxis": {
         "prefix": "Chemotaxis",
         "body": [
             "<Plugin Name=\"Chemotaxis\">",
@@ -128,7 +128,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/chemotaxis_plugin.html"
     },
-    "Connectivity": {
+    "CC3D: Connectivity": {
         "prefix": "Connectivity",
         "body": [
             "<Plugin Name=\"Connectivity\">",
@@ -141,7 +141,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/connectivity.html"
     },
-    "Contact": {
+    "CC3D: Contact": {
         "prefix": "Contact",
         "body": [
             "<Plugin Name=\"Contact\">",
@@ -154,7 +154,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/contact_plugin.html"
     },
-    "ContactInternal": {
+    "CC3D: ContactInternal": {
         "prefix": "ContactInternal",
         "body": [
             "<Plugin Name=\"ContactInternal\">",
@@ -167,7 +167,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/compartments.html"
     },
-    "Elasticity": {
+    "CC3D: Elasticity": {
         "prefix": "Elasticity",
         "body": [
             "<Plugin Name=\"Elasticity\">",
@@ -181,7 +181,7 @@
         ],
         "description": ""
     },
-    "ElasticityTracker": {
+    "CC3D: ElasticityTracker": {
         "prefix": "ElasticityTracker",
         "body": [
             "<Plugin Name=\"ElasticityTracker\">",
@@ -193,7 +193,7 @@
         ],
         "description": ""
     },
-    "ExternalPotential": {
+    "CC3D: ExternalPotential": {
         "prefix": "ExternalPotential",
         "body": [
             "<Plugin Name=\"ExternalPotential\">",
@@ -206,7 +206,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/external_potential_plugin.html"
     },
-    "FocalPointPlasticity": {
+    "CC3D: FocalPointPlasticity": {
         "prefix": "FocalPointPlasticity",
         "body": [
             "<Plugin Name=\"FocalPointPlasticity\">",
@@ -263,7 +263,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/focal_point_plasticity.html"
     },
-    "ImplicitMotility": {
+    "CC3D: ImplicitMotility": {
         "prefix": "ImplicitMotility",
         "body": [
             "<Plugin Name=\"ImplicitMotility\">",
@@ -273,7 +273,7 @@
         ],
         "description": ""
     },
-    "LengthConstraint": {
+    "CC3D: LengthConstraint": {
         "prefix": "LengthConstraint",
         "body": [
             "<Plugin Name=\"LengthConstraint\">",
@@ -286,7 +286,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/length_constraint.html"
     },
-    "PixelTracker": {
+    "CC3D: PixelTracker": {
         "prefix": "PixelTracker",
         "body": [
             "<Plugin Name=\"PixelTracker\">",
@@ -295,7 +295,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/pixel_tracking_plugins.html#pixeltracker-plugin"
     },
-    "GlobalBoundaryPixelTracker": {
+    "CC3D: GlobalBoundaryPixelTracker": {
         "prefix": "Global PixelTracker ",
         "body": [
             "<Plugin Name=\"PixelTracker\">",
@@ -304,7 +304,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/pixel_tracking_plugins.html#GlobalBoundaryPixelTracker-plugin"
     },
-    "Secretion": {
+    "CC3D: Secretion": {
         "prefix": "Secretion",
         "body": [
             "<Plugin Name=\"Secretion\">",
@@ -320,7 +320,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/secretion.html"
     },
-    "Surface": {
+    "CC3D: Surface": {
         "prefix": "Surface",
         "body": [
             "<Plugin Name=\"Surface\">",
@@ -329,7 +329,7 @@
         ],
         "description": "See https://pythonscriptingmanual.readthedocs.io/en/latest/global_volume_and_surface_plugins.html or https://pythonscriptingmanual.readthedocs.io/en/latest/surface.html"
     },
-    "Volume": {
+    "CC3D: Volume": {
         "prefix": "Volume",
         "body": [
             "<Plugin Name=\"Volume\">",
@@ -338,7 +338,7 @@
         ],
         "description": "See https://pythonscriptingmanual.readthedocs.io/en/latest/global_volume_and_surface_plugins.html or https://pythonscriptingmanual.readthedocs.io/en/latest/volume_and_growth.html#volumeflex-vs-volumelocalflex"
     },
-    "BlobInitializer": {
+    "CC3D: BlobInitializer": {
         "prefix": "BlobInitializer",
         "body": [
             "<Steppable Type=\"BlobInitializer\">",
@@ -354,7 +354,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/blob_initializer.html"
     },
-    "BoxWatcher": {
+    "CC3D: BoxWatcher": {
         "prefix": "BoxWatcher",
         "body": [
             "<Steppable Type=\"BoxWatcher\">",
@@ -366,7 +366,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/uniform_initializer.html?highlight=BoxWatcher"
     },
-    "DiffusionSolverFE": {
+    "CC3D: DiffusionSolverFE": {
         "prefix": "DiffusionSolverFE",
         "body": [
             "<Steppable Type=\"DiffusionSolverFE\">",
@@ -445,7 +445,7 @@
         ],
         "description": "See https://pythonscriptingmanual.readthedocs.io/en/latest/diffusion_solver.html?highlight=DiffusionSolverFE and https://pythonscriptingmanual.readthedocs.io/en/latest/fluctuation_compensator_addon.html"
     },
-    "FastDiffusionSolver2DFE": {
+    "CC3D: FastDiffusionSolver2DFE": {
         "prefix": "FastDiffusionSolver2DFE",
         "body": [
             "<Steppable Type=\"FastDiffusionSolver2DFE\">",
@@ -520,7 +520,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/fast_diffusion_solver_2D.html"
     },
-    "KernelDiffusionSolver": {
+    "CC3D: KernelDiffusionSolver": {
         "prefix": "KernelDiffusionSolver",
         "body": [
             "<Steppable Type=\"KernelDiffusionSolver\">",
@@ -559,7 +559,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/kernel_diffusion_solver.html"
     },
-    "PIFDumper": {
+    "CC3D: PIFDumper": {
         "prefix": "PIFDumper",
         "body": [
             "<Steppable Type=\"PIFDumper\" Frequency=\"100\" >",
@@ -570,7 +570,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/pif_dumper.html"
     },
-    "ReactionDiffusionSolverFVM": {
+    "CC3D: ReactionDiffusionSolverFVM": {
         "prefix": "ReactionDiffusionSolverFVM",
         "body": [
             "<Steppable Type=\"ReactionDiffusionSolverFVM\">",
@@ -701,7 +701,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/reaction_diffusion_solver_fvm.html"
     },
-    "SteadyStateDiffusionSolver2D": {
+    "CC3D: SteadyStateDiffusionSolver2D": {
         "prefix": "SteadyStateDiffusionSolver2D",
         "body": [
             "<Steppable Type=\"SteadyStateDiffusionSolver2D\">",
@@ -772,7 +772,7 @@
         ],
         "description": "https://pythonscriptingmanual.readthedocs.io/en/latest/steady_state_diffusion_solver.html"
     },
-    "UniformInitializer": {
+    "CC3D: UniformInitializer": {
         "prefix": "UniformInitializer",
         "body": [
             "<Steppable Type=\"UniformInitializer\">",

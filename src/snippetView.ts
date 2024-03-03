@@ -108,7 +108,6 @@ class TreeDataProvider implements vscode.TreeDataProvider<TreeItem> {
     treeData: TreeItem[];
 
     constructor() {
-        console.log('showOnlyRelevantSnippetsInMenu',showOnlyRelevantSnippetsInMenu())
         if (showOnlyRelevantSnippetsInMenu()) {
             this.treeData = [];
         } else {
