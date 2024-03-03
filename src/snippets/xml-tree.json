@@ -1,0 +1,44 @@
+{
+    "General": {
+        "Metadata": {},
+        "Potts: Simple": {},
+        "Potts: Complex": {},
+        "CellType": {},
+        "CenterOfMass": {},
+        "NeighborTracker": {}
+    },
+    "Plugins": {
+        "AdhesionFlex": {},
+        "BoundaryPixelTracker": {},
+        "BoxWatcher": {},
+        "CellTypeMonitor": {},
+        "Chemotaxis": {},
+        "Connectivity": {},
+        "Contact": {},
+        "ContactInternal": {},
+        "Elasticity": {},
+        "ElasticityTracker": {},
+        "ExternalPotential": {},
+        "FocalPointPlasticity": {},
+        "ImplicitMotility": {},
+        "LengthConstraint": {},
+        "PixelTracker": {},
+        "GlobalBoundaryPixelTracker": {},
+        "Secretion": {},
+        "Surface": {},
+        "Volume": {}
+    },
+    "Initializers": {
+        "BlobInitializer": {},
+        "TubeInitializer": {},
+        "UniformInitializer": {}
+    },
+    "Diffusion": {
+        "DiffusionSolverFE": {},
+        "FastDiffusionSolver2DFE": {},
+        "KernelDiffusionSolver": {},
+        "PIFDumper": {},
+        "ReactionDiffusionSolverFVM": {},
+        "SteadyStateDiffusionSolver2D": {}
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "Cell Attributes": {
+        "Get ExtraAttribute": {}
+    },
+    "Include": {
+        "Automaton": {},
+        "Boundary Strategy": {},
+        "Boundary Type Definitions": {},
+        "Cell/Cluster Inventory": {},
+        "Field3D": {},
+        "NumericalUtilis": {},
+        "Plugin Files": {},
+        "Point3D/Dim3D": {},
+        "Potts3D": {},
+        "Simulator": {},
+        "StringUtilis": {},
+        "Vector3": {}
+    },
+    "Module Setup": {
+        "Preload Plugin": {}
+    },
+    "Visit": {
+        "All Cells": {},
+        "Compartments of a Cluster": {},
+        "Pixel Neighbors": {}
+    },
+    "XML Utils": {
+        "Find Attribute": {},
+        "Find Element": {},
+        "Get Attribute As Bool": {},
+        "Get Attribute As Double": {},
+        "Get Attribute As Int": {},
+        "Get Attribute As Short": {},
+        "Get Attribute As Text": {},
+        "Get Attribute As UInt": {},
+        "Get Attribute As UShort": {},
+        "Get Element": {},
+        "Get Element As Bool": {},
+        "Get Element As Double": {},
+        "Get Element As Int": {},
+        "Get Element As Short": {},
+        "Get Element As Text": {},
+        "Get Element As UInt": {},
+        "Get Element As UShort": {},
+        "Process List of Elements": {}
+    }
+}
