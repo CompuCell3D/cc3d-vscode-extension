@@ -1,3 +1,8 @@
+"""
+This file is not used during the extension runtime. 
+Instead, it is used to compile snippets from the Twedit project into snippet files here. 
+"""
+
 import os
 
 from SnippetMenuParser import SnippetMenuParser

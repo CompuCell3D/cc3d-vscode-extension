@@ -1,6 +1,6 @@
 # CompuCell3D Snippets
 
-This official plugin for CompuCell3D includes more than 300 code snippets to help you write simulations in Python and XML as well as develop C++ plugins.
+This official plugin for CompuCell3D (CC3D) includes more than 300 code snippets to help you write simulations in Python and XML as well as develop C++ plugins.
 
 CompuCell3D publishes open-source virtual tissue modeling software that enables scientists to fill gaps in experimental data, educate communities, and accelerate discoveries by simulating biological phenomena.
 https://compucell3d.org/
